@@ -46,7 +46,7 @@ const GlobalStyles = () => (
 // ==========================================
 const ASSETS = {
   // 确保 3.jpg 位于 public 文件夹中
-  BG_IMAGE: "/3.jpg" 
+  BG_IMAGE: `${import.meta.env.BASE_URL}3.jpg`
 };
 
 // ==========================================
