@@ -46,7 +46,7 @@ const GlobalStyles = () => (
 // ==========================================
 const ASSETS = {
   // 确保 3.jpg 位于 public 文件夹中
-  BG_IMAGE: `${import.meta.env.BASE_URL}3.jpg`
+  BG_IMAGE: `${import.meta.env.BASE_URL}3.jpg`,BG_IMAGE_SMART: `${import.meta.env.BASE_URL}1.jpg`
 };
 
 // ==========================================
@@ -231,7 +231,7 @@ const SceneApps = () => (
     {/* ... (SceneApps content remains unchanged) ... */}
     <div className="relative w-full h-[65vh] bg-slate-900">
        <img 
-         src={ASSETS.BG_IMAGE} 
+         src={ASSETS.BG_IMAGE_SMART} 
          alt="大楼正面" 
          className="w-full h-full object-cover" 
          onError={(e: ImageErrorEvent) => { e.target.style.display='none'; if (e.target.parentElement) e.target.parentElement.style.backgroundColor='#1E293B'; }} 
