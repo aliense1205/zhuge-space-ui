@@ -10,13 +10,6 @@ interface IconProps {
     children?: React.ReactNode;
 }
 
-interface ConnectorProps {
-    top: string;
-    left?: string;
-    right?: string;
-    pulse?: boolean;
-}
-
 interface DataNodeProps {
     top: string;
     left?: string;
