@@ -10,6 +10,8 @@ interface IconProps {
     children?: React.ReactNode;
 }
 
+// 🚀 已删除：interface ConnectorProps，以解决 TS6196 错误。
+
 interface DataNodeProps {
     top: string;
     left?: string;
@@ -50,7 +52,7 @@ const Icons = {
   Cpu: (p: IconProps) => <IconWrapper {...p}><rect x="4" y="4" width="16" height="16" rx="2" /><rect x="9" y="9" width="6" height="6" /><path d="M9 1V4" /><path d="M15 1V4" /><path d="M9 20V23" /><path d="M15 20V23" /><path d="M20 9H23" /><path d="M20 14H23" /><path d="M1 9H4" /><path d="M1 14H4" /></IconWrapper>,
   ShieldCheck: (p: IconProps) => <IconWrapper {...p}><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></IconWrapper>,
   Lock: (p: IconProps) => <IconWrapper {...p}><rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></IconWrapper>,
-  Scan: (p: IconProps) => <IconWrapper {...p}><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /></IconWrapper>,
+  Scan: (p: IconProps) => <IconWrapper {...p}><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /></IconWrapper>,
   LayoutGrid: (p: IconProps) => <IconWrapper {...p}><rect width="7" height="7" x="3" y="3" rx="1" /><rect width="7" height="7" x="14" y="3" rx="1" /><rect width="7" height="7" x="14" y="14" rx="1" /><rect width="7" height="7" x="3" y="14" rx="1" /></IconWrapper>,
   Search: (p: IconProps) => <IconWrapper {...p}><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></IconWrapper>,
   Bell: (p: IconProps) => <IconWrapper {...p}><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" /><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" /></IconWrapper>,
